@@ -326,6 +326,7 @@ legend .text {
 
 .experience {
   background-image: url("./img/bg.png");
+  background-size: contain;
 }
 
 .bg-color-adventure {
