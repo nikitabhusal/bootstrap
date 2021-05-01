@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Quicksand-Regular";
+  src: local("Quicksand-Regular.otf"),
+    url("Quicksand-Regular.otf") format("opentype");
+}
+
 ul {
   text-decoration: none;
   margin: 0;
@@ -5,7 +11,6 @@ ul {
 }
 
 li {
-  display: inline;
   color: black;
 }
 
@@ -32,10 +37,6 @@ li a {
   vertical-align: text-bottom;
 }
 
-/*.info {
-  padding-left: 800px;
-  margin-top: -80px;
-}*/
 .navbar {
   background-color: #003b49;
   margin: 0 -15px;
@@ -62,39 +63,6 @@ video {
   margin-bottom: -6px;
 }
 
-/*.content {
-  position: fixed;
-  color: #f1f1f1;
-  width: 100%;
-  padding-left: 350px;
-  bottom: 0;
-}
-.content h1,
-h3 {
-  padding-left: 100px;
-}
-
-#myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: transparent;
-  color: black;
-  cursor: pointer;
-  margin-left: 150px;
-}
-
-#myBtn:hover {
-  background: #ddd;
-  color: black;
-}
-.checked {
-  color: orange;
-}
-.content p {
-  padding-left: 200px;
-}*/
 .main .container {
   position: relative;
 }
@@ -275,7 +243,6 @@ legend {
   margin-bottom: 0;
 }
 
-
 .stay-details .col-md-3 {
   padding: 0 3px;
 }
@@ -319,7 +286,6 @@ legend .text {
   color: black;
 }
 
-
 .bg-color {
   background-color: #009dae;
 }
@@ -335,4 +301,55 @@ legend .text {
 
 .thrilling {
   font-size: 14pt;
+}
+
+#rooms,
+#kids,
+#adults {
+  width: 15%;
+  background-color: transparent;
+  color: white;
+  border-color: white;
+}
+#arrivaldate,
+#departuredate {
+  background-color: transparent;
+  border-color: white;
+  color: white;
+}
+
+.footer {
+  background-color: #003b49;
+}
+
+.btn-primary {
+  border-color: white;
+}
+
+.footer-1 {
+  background-color: #1d5368;
+  font-size: 9pt;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  background: transparent;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.gallary-box:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
 }
