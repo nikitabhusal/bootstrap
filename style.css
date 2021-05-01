@@ -359,3 +359,6 @@ legend .text {
   border: none;
   background-color: unset;
 }
+.chk-btn button{
+  font-size: 14px;
+}
