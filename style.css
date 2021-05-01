@@ -45,7 +45,7 @@ li a {
 .navbar li {
   border-left: 2px solid white;
   line-height: 0;
-  padding: 0 12px;
+  padding: 0 2%;
 }
 
 .btn {
@@ -78,7 +78,7 @@ video {
 
 .content {
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
