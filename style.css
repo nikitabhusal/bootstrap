@@ -249,9 +249,9 @@ h3 {
 
 legend {
   display: block;
-  width: 30%;
+  width: auto;
   max-width: 100%;
-  padding: 0;
+  padding: 0 25px;
   margin-bottom: 0.5rem;
   font-size: 2rem;
   line-height: inherit;
@@ -319,13 +319,6 @@ legend .text {
   color: black;
 }
 
-.gallary-box:hover img {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.1);
-}
 
 .bg-color {
   background-color: #009dae;
