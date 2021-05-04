@@ -1,7 +1,6 @@
-@font-face {
-  font-family: "Quicksand-Regular";
-  src: local("Quicksand-Regular.otf"),
-    url("Quicksand-Regular.otf") format("opentype");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+.quickfont{
+    font-family: 'Quicksand', sans-serif;
 }
 
 ul {
@@ -84,6 +83,24 @@ video {
   width: 800px;
 }
 
+.content  h1 {
+  text-align: center;
+  margin: auto;
+  color: white;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.5;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.content p {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    color: #92692e;
+    line-height: 1;
+}
+
 .roombutton {
   margin: 0;
   position: absolute;
@@ -91,28 +108,7 @@ video {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-.content h3 {
-  color: #92692f;
-}
 
-.content p {
-  color: #849d8d;
-}
-
-#myBtn {
-  width: 200px;
-  font-size: 18px;
-  padding: 10px;
-  border: none;
-  background: transparent;
-  color: black;
-  cursor: pointer;
-}
-
-#myBtn:hover {
-  background: #ddd;
-  color: black;
-}
 
 .checked {
   color: orange;
