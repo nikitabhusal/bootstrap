@@ -2,6 +2,9 @@
 .quickfont{
     font-family: 'Quicksand', sans-serif;
 }
+body{
+  font-family:  'Quicksand', sans-serif;
+}
 
 ul {
   text-decoration: none;
@@ -35,16 +38,54 @@ li a {
 .nav-links img {
   vertical-align: text-bottom;
 }
+.header{
+  background-color : snow !important;
+}
+.container-fluid .header .detail p{
+	line-height: 1;
+}
+
+#header ul {
+  list-style: none;
+  margin-left: 0px;
+}
+
+#nnbar ul li,
+#header ul li {
+  display: inline;
+  padding: 0px 10px;
+}
+
+.container-fluid .header .detail p a{
+  font-family: 'Quicksand', sans-serif;	
+  font-size: 13px;
+  color: black;
+  }
 
 .navbar {
   background-color: #003b49;
-  margin: 15px -15px 0px -15px;
+  color: white;
+  margin: 0 -15px 0 -15px;
+}
+.nav-link {
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+}
+.navbar-text {
+  background-color: yellow;
+  padding: 2px 10px;
+}
+.navbar-text a {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  color: black;
 }
 
-.navbar li {
-  border-left: 2px solid white;
-  line-height: 0;
-  padding: 0 2%;
+#header ul li a {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 13px;
+  color: black;
 }
 
 .book {
@@ -55,29 +96,36 @@ li a {
   margin-bottom: 1rem;
 }
 
-/*video*/
+#myVideo {
+  position: relative;
+  /* width: 100%; */
+  min-width: 100%;
+  height: 100%;
+  max-height: 600px;
+  background: transparent url(video-bg.jpg) no-repeat;
+  background-size: cover;
+}
 video {
+  display: block;
+}
+.video-container {
   width: 100%;
-  height: auto;
-  margin-bottom: -6px;
+  max-height: 600px;
+  overflow: hidden;
 }
 
 .main .container {
   position: relative;
 }
 
-.video-container {
-  margin: 0 -15px;
-}
-
-.container-fluid video {
-  position: relative;
-  z-index: 0;
+.video-card{
+  margin-right: auto;
+  padding: 0;
 }
 
 .content {
   position: absolute;
-  top: 15%;
+  top: 7%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 90%;
@@ -206,6 +254,10 @@ video {
   background-color: #1d5368;
   padding: 1%;
   margin: 0px 24px 20px 24px;
+}
+
+.travellogo img{
+  width: 100%;
 }
 
 .color-line {

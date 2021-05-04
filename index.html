@@ -16,496 +16,510 @@
 
 <body>
   <div class="main">
-  <div class="container card">
-    <div class="logo">
-     <a href="#"> <img src="img/logo.png" alt="logo"></a>
-      <div class="float-right header-contacts">
-        <p>+27 28 384 1898</p>
-        <p class="pb-2">info@crayfishlodge.com</p>
-        <div class="nav-links mt-1">
-          <ul class="list-inline">
-            <li class="list-inline-item"><a href="#">ABOUT US</a></li>
-            <li class="list-inline-item">|</li>
-            <li class="list-inline-item"><a href="#">CONTACT</a></li>
-            <li class="list-inline-item">|</li>
-            <li class="list-inline-item"><a href="#">BLOG</a></li>
-            <li class="list-inline-item"><img src="img/flag.png"></li>
-          </ul>
+    <div class="container shadow rounded" id="header">
+      <div class="container-fluid">
+        <div class="header navbar py-2 px-3">
+          <div class="logo float-left">
+            <img src="./img/logo.png" class="img-fluid">
+          </div>
+          <div class="detail float-right d-none d-md-block d-lg-block">
+            <p align="right">
+              <a href="#">+27 28 384 1898</a><br>
+              <a href="mailto:info@crayfishlodge.com">info@crayfishlodge.com</a><br>
+            </p>
+            <ul>
+              <li class="border-right border-dark"><a href="#">ABOUT US</a></li>
+              <li class="border-right border-dark"><a href="#">CONTACT</a></li>
+              <li class="border-dark"><a href="#">BLOG</a></li>
+              <li><a href="#"><img src="/img/flag.png"></a></li>
+            </ul>
+            <p></p>
+          </div>
         </div>
+
       </div>
-      <nav class="navbar navbar-expand-sm navbar-dark">
-        <a class="navbar-brand text-white" href="#">HOME</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon"></span>
+
+    </div>
+    <div class="container shadow" id="nnbar">
+      <nav class="navbar navbar-expand-lg">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-align-justify text-light"></i>
         </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav list-inline w-100">
-            <li class="nav-item list-inline-item">
-              <a class="nav-link text-white" href="#">ROOMS</a>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active border-right border-light">
+              <a class="nav-link" href="#">HOME</a>
             </li>
-            <li class="nav-item list-inline-item">
-              <a class="nav-link text-white" href="#">RATES AND INFO</a>
+            <li class="nav-item  border-right border-light">
+              <a class="nav-link" href="#">ROOMS</a>
             </li>
-            <li class="nav-item list-inline-item">
-              <a class="nav-link text-white" href="#">GALLARY</a>
+            <li class="nav-item  border-right border-light">
+              <a class="nav-link" href="#">RATES AND INFO</a>
             </li>
-            <li class="nav-item list-inline-item">
-              <a class="nav-link text-white" href="#">THE LODGE</a>
+            <li class="nav-item border-right border-light">
+              <a class="nav-link" href="#">GALLERY</a>
             </li>
-            <li class="nav-item list-inline-item">
-              <a class="nav-link text-white" href="#">DESTINATION</a>
+            <li class="nav-item border-right border-light">
+              <a class="nav-link" href="#">THE LODGE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">DESTINATION</a>
             </li>
           </ul>
+          <span class="navbar-text">
+            <a href="#" class="btn-sm btn">BOOK NOW</a>
+          </span>
         </div>
-        <button class="book" type="submit">BOOK NOW</button>
       </nav>
     </div>
+    <div class="container card video-card">
+      <div class="video-container">
+        <video autoplay muted loop id="myVideo">
+          <source src="video/watching_the_waves.mp4" type="video/mp4">
+          <source src="video/watching_the_waves.mp4" type="video/ogg">
+          Your browser does not support HTML5 video.
+        </video>
+        <div class="content text-center text-white">
+          <h1>Hospitality at its warmest. Nature at its finest.</h1>
+          <h1>CRAYFISH LODGE</h1>
+          <img src="img/5star.png" class="mt-3 mb-3">
+          <p> A Boutique 5-star Guest Lodge</p>
+          <p>WATCH VIDEO</p>
+          <span class="video-icon"><a onclick="myFunction()"><img src="img/play.png" class="mx-auto d-block"></a></span>
+        </div>
 
-    <div class="video-container">
-      <video autoplay muted loop id="myVideo">
-        <source src="video/watching_the_waves.mp4" type="video/mp4">
-        <source src="video/watching_the_waves.mp4" type="video/ogg">
-        Your browser does not support HTML5 video.
-      </video>
-      <div class="content text-center text-white">
-        <h1>Hospitality at its warmest. Nature at its finest.</h1>
-        <h1>CRAYFISH LODGE</h1>
-        <img src="img/5star.png" class="mt-3 mb-3">
-        <p> A Boutique 5-star Guest Lodge</p>
-        <p>WATCH VIDEO</p>
-        <span class="video-icon"><a  onclick="myFunction()" ><img src="img/play.png" class="mx-auto d-block"></a></span>
-      </div>
+        <script>
+          var video = document.getElementById("myVideo");
+          var btn = document.getElementById("myBtn");
 
-      <script>
-        var video = document.getElementById("myVideo");
-        var btn = document.getElementById("myBtn");
-
-        function myFunction() {
-          if (video.paused) {
-            video.play();
-          } else {
-            video.pause();
+          function myFunction() {
+            if (video.paused) {
+              video.play();
+            } else {
+              video.pause();
+            }
           }
-        }
-      </script>
-    </div>
-    <!--vdo container ends-->
-    <div class="text">
-      <p>ENJOY LUXURY SEAFRONT DE KELDERS/GANSBAAI</p>
-      <p>ACCOMMODATION</p>
-      </p>
-      <p class="guest">WHERE GUEST ARE WELCOMED WITH OPEN ARMS</p>
-    </div>
-
-    <div class="paragraph text-center">
-
-      <p class="mt-5">WHAT MAKES A STAY AT</p>
-      <P>CRAYFISH LODGE TRULY MEMORABLE?</P>
-    </div>
-    <div class="row stay-details">
-      <div class="col-md-4">
-        <div class="card mb-4 box-shadow">
-          <img class="card-img column-1">
-          <p class="text-on-image"> UNIQUE LOCATION </p>
-          <div class="card-body">
-            <p class="card-text text-white">Few places on earth are like Gansbaai. Enveloped by a pristine stretch of
-              beach, the
-              area is surrounded
-              by beautiful fynbos vegetation. With its elegantly modern Bauhaus architecture, Crayfish Lodge overlooks
-              the Overberg coastline and mountains beyond, allowing you to truly escape back to nature.</p>
-
-          </div>
-        </div>
+        </script>
       </div>
-      <div class="col-md-4">
-        <div class="card mb-4 box-shadow">
-          <img class="card-img column-2">
-          <p class="text-on-image"> PERSONALISED SERVICE </p>
-          <div class="card-body">
-            <p class="card-text text-white">Few places on earth are like Gansbaai. Enveloped by a pristine stretch of
-              beach, the
-              area is surrounded
-              by beautiful fynbos vegetation. With its elegantly modern Bauhaus architecture, Crayfish Lodge overlooks
-              the Overberg coastline and mountains beyond, allowing you to truly escape back to nature.</p>
-
-          </div>
-        </div>
+      <!--vdo container ends-->
+      <div class="text">
+        <p>ENJOY LUXURY SEAFRONT DE KELDERS/GANSBAAI</p>
+        <p>ACCOMMODATION</p>
+        </p>
+        <p class="guest">WHERE GUEST ARE WELCOMED WITH OPEN ARMS</p>
       </div>
-      <div class="col-md-4">
-        <div class="card mb-4 box-shadow">
-          <img class="card-img column-3">
-          <p class="text-on-image"> UNFORGATABLE EXPERIENCE </p>
-          <div class="card-body">
-            <p class="card-text text-white">Few places on earth are like Gansbaai. Enveloped by a pristine stretch of
-              beach, the
-              area is surrounded
-              by beautiful fynbos vegetation. With its elegantly modern Bauhaus architecture, Crayfish Lodge overlooks
-              the Overberg coastline and mountains beyond, allowing you to truly escape back to nature.</p>
 
-          </div>
-        </div>
+      <div class="paragraph text-center">
+
+        <p class="mt-5">WHAT MAKES A STAY AT</p>
+        <P>CRAYFISH LODGE TRULY MEMORABLE?</P>
       </div>
-    </div>
-    <div class=" travellogo text-center">
-      <img src="img/travellogo.png" alt="">
-    </div>
-    <div class="rooms">
-      <fieldset class="color-line">
-        <legend>THE ROOMS</legend>
-      </fieldset>
-    </div>
-    <div class=" luxurious text-center">
-      <p>Our five luxurious, light-flooded rooms all enjoy sweeping sea views, and all have immaculate, stylish
-        interiors.</p>
-    </div>
+      <div class="row stay-details">
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img column-1">
+            <p class="text-on-image"> UNIQUE LOCATION </p>
+            <div class="card-body">
+              <p class="card-text text-white">Few places on earth are like Gansbaai. Enveloped by a pristine stretch of
+                beach, the
+                area is surrounded
+                by beautiful fynbos vegetation. With its elegantly modern Bauhaus architecture, Crayfish Lodge overlooks
+                the Overberg coastline and mountains beyond, allowing you to truly escape back to nature.</p>
 
-    <div class="row stay-details mb-4">
-      <div class="col-md-6">
-        <div class="card mb-4 box-shadow h-100">
-          <img class="card-img column-4">
-          <p class="text-on-image"> ATLANTIC ROOM </p>
-          <div class="card-body text-left">
-            <div class="row">
-              <div class="col-sm-8">
-                <p class=" text-white">ATLANTIC ROOM</p>
-                <p class="card-text text-white">
-                 These rooms give you easy access to the pool and beach and all come with your own patio or terrace, along
-                  with unforgettable views of Walker Bay beyond.</p>
-              </div>
-              <div class="col-sm-4 text-center">
-                <div class="button roombutton">
-                  <button type="button" class="special w-70">See Room</button>
-                </div>
-              </div>
-              </div>
-           </div>
-          </div>
-        </div>
-      
-      <div class="col-md-6">
-        <div class="card mb-4 box-shadow h-100">
-          <img class="card-img column-5">
-          <p class="text-on-image"> PANORAMA SUIT </p>
-          <div class="card-body text-left">
-            <div class="row">
-              <div class="col-sm-8">
-                <p class=" text-white">PANORAMA ROOM</p>
-            <p class="card-text text-white">
-              These spacious suites each feature a private balcony with unparalleled ocean
-              views, as well as luxurious spa bathroom amenities.</p>
-              </div>
-              <div class="col-sm-4 text-center ">
-                <div class="button roombutton">
-                  <button type="button" class="special w-70">See Room</button>
-                </div>
-              </div>
-             
             </div>
-            
           </div>
         </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img column-2">
+            <p class="text-on-image"> PERSONALISED SERVICE </p>
+            <div class="card-body">
+              <p class="card-text text-white">Few places on earth are like Gansbaai. Enveloped by a pristine stretch of
+                beach, the
+                area is surrounded
+                by beautiful fynbos vegetation. With its elegantly modern Bauhaus architecture, Crayfish Lodge overlooks
+                the Overberg coastline and mountains beyond, allowing you to truly escape back to nature.</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img column-3">
+            <p class="text-on-image"> UNFORGATABLE EXPERIENCE </p>
+            <div class="card-body">
+              <p class="card-text text-white">Few places on earth are like Gansbaai. Enveloped by a pristine stretch of
+                beach, the
+                area is surrounded
+                by beautiful fynbos vegetation. With its elegantly modern Bauhaus architecture, Crayfish Lodge overlooks
+                the Overberg coastline and mountains beyond, allowing you to truly escape back to nature.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=" travellogo text-center">
+        <img src="img/travellogo.png" alt="">
+      </div>
+      <div class="rooms">
+        <fieldset class="color-line">
+          <legend>THE ROOMS</legend>
+        </fieldset>
+      </div>
+      <div class=" luxurious text-center">
+        <p>Our five luxurious, light-flooded rooms all enjoy sweeping sea views, and all have immaculate, stylish
+          interiors.</p>
+      </div>
+
+      <div class="row stay-details mb-4">
+        <div class="col-md-6">
+          <div class="card mb-4 box-shadow h-100">
+            <img class="card-img column-4">
+            <p class="text-on-image"> ATLANTIC ROOM </p>
+            <div class="card-body text-left">
+              <div class="row">
+                <div class="col-sm-8">
+                  <p class=" text-white">ATLANTIC ROOM</p>
+                  <p class="card-text text-white">
+                    These rooms give you easy access to the pool and beach and all come with your own patio or terrace,
+                    along
+                    with unforgettable views of Walker Bay beyond.</p>
+                </div>
+                <div class="col-sm-3 text-center m-2 p-2">
+                  <div class="button roombutton">
+                    <button type="button" class="special w-70">See Room</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card mb-4 box-shadow h-100">
+            <img class="card-img column-5">
+            <p class="text-on-image"> PANORAMA SUIT </p>
+            <div class="card-body text-left">
+              <div class="row">
+                <div class="col-sm-8">
+                  <p class=" text-white">PANORAMA ROOM</p>
+                  <p class="card-text text-white">
+                    These spacious suites each feature a private balcony with unparalleled ocean
+                    views, as well as luxurious spa bathroom amenities.</p>
+                </div>
+                <div class="col-sm-3 text-center m-2 p-2">
+                  <div class="button roombutton">
+                    <button type="button" class="special w-70">See Room</button>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
       </div>
 
     </div>
 
-  </div>
 
-
-  <div class="container card guesthouse">
-    <div class="text-center">
-      <h4 class="text-white">“This is by far the best guesthouse I have ever stayed at in my travels.”</h4>
-      <p> <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-        <span class="fa fa-star checked"></span>
-      </p>
-      <p class="text-white"> Charles A. Germany</p>
+    <div class="container card guesthouse">
+      <div class="text-center">
+        <h4 class="text-white">“This is by far the best guesthouse I have ever stayed at in my travels.”</h4>
+        <p> <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </p>
+        <p class="text-white"> Charles A. Germany</p>
+      </div>
     </div>
-  </div>
 
-  <div class="container card pt-4 pb-4">
-    <div class="rooms">
-      <fieldset class="color-line">
-        <legend>OUR SPECIALS</legend>
-      </fieldset>
-    </div>
-    <div class="row stay-details">
-      <div class="col-md-3">
-        <div class="card mb-4 box-shadow h-100">
-          <div class="card-body text-left">
-            <p class=" text-white mb-2">EARLY BIRD</p>
-            <p class="card-text text-white">
-              lorem ipsum dolor sit amet, no putant vituperata per, icu eius equidem , odio dicunt eu mel. Docendi
-              reformidans eos cu, cibo minim cu his, consequat signiferumque necessitatibus per an. Oblique prompta
-              adversarium te sea, at vim integre persequeris vitupera
-            </p>
-            <div class="button ">
+    <div class="container card pt-4 pb-4">
+      <div class="rooms">
+        <fieldset class="color-line">
+          <legend>OUR SPECIALS</legend>
+        </fieldset>
+      </div>
+      <div class="row stay-details">
+        <div class="col-md-3">
+          <div class="card mb-4 box-shadow h-100">
+            <div class="card-body text-left">
+              <p class=" text-white mb-2">EARLY BIRD</p>
+              <p class="card-text text-white">
+                lorem ipsum dolor sit amet, no putant vituperata per, icu eius equidem , odio dicunt eu mel. Docendi
+                reformidans eos cu, cibo minim cu his, consequat signiferumque necessitatibus per an. Oblique prompta
+                adversarium te sea, at vim integre persequeris vitupera
+              </p>
+              <div class="button ">
+                <button type="button" class="special w-75">See Special</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card mb-4 box-shadow h-100">
+            <img class="card-img column-7 h-100">
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card mb-4 box-shadow h-100">
+            <div class="card-body text-left">
+              <h4 class=" text-white mb-2 font-weight-normal">LONG STAY</h4>
+              <p class="card-text text-white mb-2">
+                lorem ipsum dolor sit amet, no putant vituperata per,icu eius equidem impedit malodio dicunt eu mel.
+                Docendi reformidans
+              </p>
+              <div class="button ">
+                <button type="button" class="special w-75">See Special</button>
+              </div>
+              <h4 class="text-left text-white mt-3 mb-1 font-weight-normal">EARLY BIRD</h4>
+              <p class="card-text text-white mb-2">
+                lorem ipsum dolor sit amet, no putant vituperata per, impedit mor duo id.
+              </p>
+              <div class="button "></div>
               <button type="button" class="special w-75">See Special</button>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card mb-4 box-shadow h-100">
-          <img class="card-img column-7 h-100">
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card mb-4 box-shadow h-100">
-          <div class="card-body text-left">
-            <h4 class=" text-white mb-2 font-weight-normal">LONG STAY</h4>
-            <p class="card-text text-white mb-2">
-              lorem ipsum dolor sit amet, no putant vituperata per,icu eius equidem impedit malodio dicunt eu mel.
-              Docendi reformidans
-            </p>
-            <div class="button ">
-              <button type="button" class="special w-75">See Special</button>
-            </div>
-            <h4 class="text-left text-white mt-3 mb-1 font-weight-normal">EARLY BIRD</h4>
-            <p class="card-text text-white mb-2">
-              lorem ipsum dolor sit amet, no putant vituperata per, impedit mor duo id.
-            </p>
-            <div class="button "></div>
-            <button type="button" class="special w-75">See Special</button>
+        <div class="col-md-3">
+          <div class="card mb-4 box-shadow h-100">
+            <img class="card-img column-9 h-100">
           </div>
         </div>
       </div>
-      <div class="col-md-3">
-        <div class="card mb-4 box-shadow h-100">
-          <img class="card-img column-9 h-100">
-        </div>
-      </div>
-    </div>
-    <div class="button text-center mb-2 mt-4">
-      <button type="button" class="btn view text-uppercase">View All Specials</button>
-    </div>
-
-  </div>
-  <!--gallary-->
-  <div class="container card bg-color pb-4">
-    <div class="gallary">
-      <div class="view1 pb-2">
-        <fieldset class="white-line">
-          <legend class="text-white">VIEW OUR GALLARY</legend>
-        </fieldset>
-      </div>
-      <div class="gallary-images w-100">
-        <div class="row">
-          <div class="col-md-5 p-1">
-            <div class="card img-fluid h-100  gallary-box">
-              <img class="img-fluid h-100 " src="img/gallary1.png" alt="gallaryimg">
-            </div>
-          </div>
-          <div class="col-md-3 p-1">
-            <div class="card img-fluid h-100 gallary-box ">
-              <img class="img-fluid h-100 " src="img/gallary2.png" alt="gallaryimg">
-            </div>
-          </div>
-          <div class="col-md-4 p-1">
-            <div class="card img-fluid h-100 gallary-box ">
-              <img class="img-fluid h-100 " src="img/gallary3.png" alt="gallaryimg">
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3 p-1">
-            <div class="card img-fluid h-100 gallary-box ">
-              <img class="img-fluid h-100 " src="img/gallary4.png" alt="gallaryimg">
-            </div>
-          </div>
-          <div class="col-md-3 p-1">
-            <div class="card img-fluid h-100  gallary-box">
-              <img class="img-fluid h-100 " src="img/gallary5.png" alt="gallaryimg">
-            </div>
-          </div>
-          <div class="col-md-3 p-1">
-            <div class="card img-fluid h-100 gallary-box ">
-              <img class="img-fluid h-100 " src="img/gallary6.png" alt="gallaryimg">
-            </div>
-          </div>
-          <div class="col-md-3 p-1">
-            <div class="card img-fluid h-100  gallary-box">
-              <img class="img-fluid h-100 " src="img/gallary7.png" alt="gallaryimg">
-            </div>
-          </div>
-        </div>
+      <div class="button text-center mb-2 mt-4">
+        <button type="button" class="btn view text-uppercase">View All Specials</button>
       </div>
 
     </div>
-    <div class="button text-center mb-2 mt-3">
-      <button type="button" class="btn view1 text-white">Visit Gallary</button>
-    </div>
-  </div>
+    <!--gallary-->
+    <div class="container card bg-color pb-4">
+      <div class="gallary">
+        <div class="view1 pb-2">
+          <fieldset class="white-line">
+            <legend class="text-white">VIEW OUR GALLARY</legend>
+          </fieldset>
+        </div>
+        <div class="gallary-images w-100">
+          <div class="row">
+            <div class="col-md-5 p-1">
+              <div class="card img-fluid h-100  gallary-box">
+                <img class="img-fluid h-100 " src="img/gallary1.png" alt="gallaryimg">
+              </div>
+            </div>
+            <div class="col-md-3 p-1">
+              <div class="card img-fluid h-100 gallary-box ">
+                <img class="img-fluid h-100 " src="img/gallary2.png" alt="gallaryimg">
+              </div>
+            </div>
+            <div class="col-md-4 p-1">
+              <div class="card img-fluid h-100 gallary-box ">
+                <img class="img-fluid h-100 " src="img/gallary3.png" alt="gallaryimg">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 p-1">
+              <div class="card img-fluid h-100 gallary-box ">
+                <img class="img-fluid h-100 " src="img/gallary4.png" alt="gallaryimg">
+              </div>
+            </div>
+            <div class="col-md-3 p-1">
+              <div class="card img-fluid h-100  gallary-box">
+                <img class="img-fluid h-100 " src="img/gallary5.png" alt="gallaryimg">
+              </div>
+            </div>
+            <div class="col-md-3 p-1">
+              <div class="card img-fluid h-100 gallary-box ">
+                <img class="img-fluid h-100 " src="img/gallary6.png" alt="gallaryimg">
+              </div>
+            </div>
+            <div class="col-md-3 p-1">
+              <div class="card img-fluid h-100  gallary-box">
+                <img class="img-fluid h-100 " src="img/gallary7.png" alt="gallaryimg">
+              </div>
+            </div>
+          </div>
+        </div>
 
-  <div class="container card p-0">
-    <div class="experience  mb-2 mt-2">
-      <div class="row">
-        <div class="col-9 mt-4 mb-4 ">
-          <h4 class="font-weight-normal text-center text-white ">EXPERIENCE OUR UNIQUE SEASIDE HOSPITALITY</h4>
-        </div>
-        <div class="col-3 mt-4 mb-4 ">
-          <button type="button" class="btn view1 text-uppercase text-center bg-warning text-dark">Book now</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container card bg-color-adventure">
-    <div class="adventure p-4">
-      <div class="view pb-3">
-        <fieldset class="white-line">
-          <legend class="text-white thrilling">THRILLING ADVENTURES IN GAANSBAAI</legend>
-        </fieldset>
-      </div>
-      <div class="adv-images">
-        <div class="row">
-          <div class="col-md-3 p-1">
-            <div class="card img-fluid h-100  gallary-box">
-              <img class="img-fluid h-100" src="img/adv1.png" alt="adventureimg">
-            </div>
-          </div>
-
-          <div class="col-md-3  p-1">
-            <div class="card img-fluid h-100  gallary-box">
-              <img class="img-fluid h-100 " src="img/adv2.png" alt="adventureimg">
-            </div>
-          </div>
-          <div class="col-md-3 p-1">
-            <div class="card img-fluid h-100 gallary-box ">
-              <img class="img-fluid h-100 " src="img/adv3.png" alt="adventureimg">
-            </div>
-          </div>
-          <div class="col-md-3 p-1">
-            <div class="card img-fluid h-100 gallary-box ">
-              <img class="img-fluid h-100 " src="img/adv4.png" alt="adventureimg">
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3 p-1">
-            <div class="card img-fluid h-100  gallary-box">
-              <img class="img-fluid h-100 " src="img/adv5.png" alt="adventureimg">
-            </div>
-          </div>
-          <div class="col-md-3 p-1">
-            <div class="card img-fluid h-100 gallary-box ">
-              <img class="img-fluid h-100 " src="img/adv6.png" alt="adventureimg">
-            </div>
-          </div>
-          <div class="col-md-3 p-1">
-            <div class="card img-fluid h-100  gallary-box">
-              <img class="img-fluid h-100 " src="img/adv7.png" alt="adventureimg">
-            </div>
-          </div>
-          <div class="col-md-3  p-1">
-            <div class="card img-fluid h-100 gallary-box ">
-              <img class="h-100" src="img/adv8.png" alt="adventureimg">
-            </div>
-          </div>
-        </div>
       </div>
       <div class="button text-center mb-2 mt-3">
-        <button type="button" class="btn view1 text-uppercase text-white">See Activities</button>
+        <button type="button" class="btn view1 text-white">Visit Gallary</button>
       </div>
     </div>
-  </div>
 
-
-  <div class="container card footer text-white">
-    <div class="row pt-5 pb-4">
-      <div class="col-sm-4  enquiry p-3">
-        <div>
-          <p>MAKE ENQUIRY</p>
-        </div>
-        <div>
-          <p>Loremqui estidatum Loremqui estidatumLoremqui estidatum Loremqui estidatum</p>
-        </div>
-        <div>
-          <p> +27 28 384 1898</p>
-          <p> info@crayfishlodge.com</p>
-        </div>
-      </div>
-      <div class="col-sm-4 booking border  border-top-0  border-bottom-0 p-3 ">
-        <p>MAKE A BOOKING</p>
-        <div class="form-group ml-2 mr-2">
-          <label for="arrivaldate" class="mr-5">ARRIVAL DATE</label>
-          <input type="date" id="arrivaldate" name="arrivaldate">
-        </div>
-        <div class="form-group ml-2 mr-2">
-          <label for="departuredate" class="mr-4">DEPARTURE DATE</label>
-          <input type="date" id="departuredate" name="departuredate">
-        </div>
-        <div class="form-group mt-4 mb-4 ml-2 mr-2">
-          <label for="rooms">ROOMS</label>
-          <input type="" id="rooms" name="rooms">
-
-
-          <label for="adults">ADULTS</label>
-          <input type="" id="adults" name="adults">
-
-          <label for="kids">KIDS</label>
-          <input type="" id="kids" name="kids">
-        </div>
-        <div class="row chk-btn">
-          <div class="col-lg ">
-            <button type="submit" class="btn float-right btn-primary text-white w-100">CHECK AVAILABILITY</button>
+    <div class="container card p-0">
+      <div class="experience  mb-2 mt-2">
+        <div class="row">
+          <div class="col-9 mt-4 mb-4 ">
+            <h4 class="font-weight-normal text-center text-white ">EXPERIENCE OUR UNIQUE SEASIDE HOSPITALITY</h4>
           </div>
-          <div class="col-lg">
-            <button type="submit" class="btn float-left btn-primary text-white w-100 ">PROMOTION CODE</button>
+          <div class="col-3 mt-4 mb-4 ">
+            <button type="button" class="btn view1 text-uppercase text-center bg-warning text-dark">Book now</button>
           </div>
         </div>
-
-
-        </form>
-      </div>
-      <div class="col-sm-4 sitemap pl-5 p-3">
-        <p>SITEMAP</p>
-        <ul class="list-unstyled float-left mr-5">
-          <li class="footer-li mb-2"><a href="#" class="text-white">Home</a></li>
-          <li class="footer-li mb-2"> <a href="#" class="text-white">The Lodge </a> </li>
-          <li class="footer-li mb-2"> <a href="#" class="text-white">Rooms</a></li>
-          <li class="footer-li mb-2"> <a href="#" class="text-white">Rates and Info</a></li>
-          <li class="footer-li mb-2"> <a href="#" class="text-white">Gallary</a></li>
-          <li class="footer-li mb-2"> <a href="#" class="text-white">Destination</a></li>
-        </ul>
-
-
-        <ul class="list-unstyled float-left ml-5">
-          <li class="footer-li mb-2"> <a href="#" class="text-white">About Us</a></li>
-          <li class="footer-li mb-2"> <a href="#" class="text-white">Contact</a></li>
-          <li class="footer-li mb-2"> <a href="#" class="text-white">Blog</a></li>
-          <li class="footer-li mb-2"> <a href="#" class="text-white">Privacy Policy</a></li>
-          <li class="footer-li mb-2"> <a href="#" class="text-white">Terms of Use</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="row footer-1">
-      <div class="col-sm-4 list pl-4">
-        <ul class="list-inline mt-3">
-          <li class="list-inline-item"><a href="#" class="text-white">&copy; CRAYFISH LODGE 2016</a></li>
-          <li class="list-inline-item"> <a href="#" class="text-white">|</a> </li>
-          <li class="list-inline-item"> <a href="#" class="text-white">CONTACT</a></li>
-          <li class="list-inline-item"> <a href="#" class="text-white">|</a></li>
-          <li class="list-inline-item"> <a href="#" class="text-white">LEGAL TERMS</a></li>
-        </ul>
-      </div>
-      <div class="col-sm-4 development">
-        <p class="text-white mt-3">DEVELOPED BY KISHAN CONSULTING</p>
-      </div>
-      <div class="col-sm-4 social">
-        <ul class="list-inline">
-          <li class="list-inline-item"><a href="#" class="text-white">JOIN OUR COMMUNITY</a></li>
-          <li class="list-inline-item"><a href="#" class="fa fa-facebook"></a> </li>
-          <li class="list-inline-item"><a href="#" class="fa fa-twitter"></a></li>
-          <li class="list-inline-item"><a href="#" class="fa fa-google"></a></li>
-          <li class="list-inline-item"><a href="#" class="fa fa-linkedin"></a></li>
-        </ul>
       </div>
     </div>
 
+    <div class="container card bg-color-adventure">
+      <div class="adventure p-4">
+        <div class="view pb-3">
+          <fieldset class="white-line">
+            <legend class="text-white thrilling">THRILLING ADVENTURES IN GAANSBAAI</legend>
+          </fieldset>
+        </div>
+        <div class="adv-images">
+          <div class="row">
+            <div class="col-md-3 p-1">
+              <div class="card img-fluid h-100  gallary-box">
+                <img class="img-fluid h-100" src="img/adv1.png" alt="adventureimg">
+              </div>
+            </div>
+
+            <div class="col-md-3  p-1">
+              <div class="card img-fluid h-100  gallary-box">
+                <img class="img-fluid h-100 " src="img/adv2.png" alt="adventureimg">
+              </div>
+            </div>
+            <div class="col-md-3 p-1">
+              <div class="card img-fluid h-100 gallary-box ">
+                <img class="img-fluid h-100 " src="img/adv3.png" alt="adventureimg">
+              </div>
+            </div>
+            <div class="col-md-3 p-1">
+              <div class="card img-fluid h-100 gallary-box ">
+                <img class="img-fluid h-100 " src="img/adv4.png" alt="adventureimg">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 p-1">
+              <div class="card img-fluid h-100  gallary-box">
+                <img class="img-fluid h-100 " src="img/adv5.png" alt="adventureimg">
+              </div>
+            </div>
+            <div class="col-md-3 p-1">
+              <div class="card img-fluid h-100 gallary-box ">
+                <img class="img-fluid h-100 " src="img/adv6.png" alt="adventureimg">
+              </div>
+            </div>
+            <div class="col-md-3 p-1">
+              <div class="card img-fluid h-100  gallary-box">
+                <img class="img-fluid h-100 " src="img/adv7.png" alt="adventureimg">
+              </div>
+            </div>
+            <div class="col-md-3  p-1">
+              <div class="card img-fluid h-100 gallary-box ">
+                <img class="h-100" src="img/adv8.png" alt="adventureimg">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="button text-center mb-2 mt-3">
+          <button type="button" class="btn view1 text-uppercase text-white">See Activities</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="container card footer text-white">
+      <div class="row pt-5 pb-4">
+        <div class="col-sm-4  enquiry p-3">
+          <div>
+            <p>MAKE ENQUIRY</p>
+          </div>
+          <div>
+            <p>Loremqui estidatum Loremqui estidatumLoremqui estidatum Loremqui estidatum</p>
+          </div>
+          <div>
+            <p> +27 28 384 1898</p>
+            <p> info@crayfishlodge.com</p>
+          </div>
+        </div>
+        <div class="col-sm-4 booking border  border-top-0  border-bottom-0 p-3 ">
+          <p>MAKE A BOOKING</p>
+          <div class="form-group ml-2 mr-2">
+            <label for="arrivaldate" class="mr-5">ARRIVAL DATE</label>
+            <input type="date" id="arrivaldate" name="arrivaldate">
+          </div>
+          <div class="form-group ml-2 mr-2">
+            <label for="departuredate" class="mr-4">DEPARTURE DATE</label>
+            <input type="date" id="departuredate" name="departuredate">
+          </div>
+          <div class="form-group mt-4 mb-4 ml-2 mr-2">
+            <label for="rooms">ROOMS</label>
+            <input type="" id="rooms" name="rooms">
+
+
+            <label for="adults">ADULTS</label>
+            <input type="" id="adults" name="adults">
+
+            <label for="kids">KIDS</label>
+            <input type="" id="kids" name="kids">
+          </div>
+          <div class="row chk-btn">
+            <div class="col-lg ">
+              <button type="submit" class="btn float-right btn-primary text-white w-100">CHECK AVAILABILITY</button>
+            </div>
+            <div class="col-lg">
+              <button type="submit" class="btn float-left btn-primary text-white w-100 ">PROMOTION CODE</button>
+            </div>
+          </div>
+
+
+          </form>
+        </div>
+        <div class="col-sm-4 sitemap pl-5 p-3">
+          <p>SITEMAP</p>
+          <ul class="list-unstyled float-left mr-5">
+            <li class="footer-li mb-2"><a href="#" class="text-white">Home</a></li>
+            <li class="footer-li mb-2"> <a href="#" class="text-white">The Lodge </a> </li>
+            <li class="footer-li mb-2"> <a href="#" class="text-white">Rooms</a></li>
+            <li class="footer-li mb-2"> <a href="#" class="text-white">Rates and Info</a></li>
+            <li class="footer-li mb-2"> <a href="#" class="text-white">Gallary</a></li>
+            <li class="footer-li mb-2"> <a href="#" class="text-white">Destination</a></li>
+          </ul>
+
+
+          <ul class="list-unstyled float-left ml-5">
+            <li class="footer-li mb-2"> <a href="#" class="text-white">About Us</a></li>
+            <li class="footer-li mb-2"> <a href="#" class="text-white">Contact</a></li>
+            <li class="footer-li mb-2"> <a href="#" class="text-white">Blog</a></li>
+            <li class="footer-li mb-2"> <a href="#" class="text-white">Privacy Policy</a></li>
+            <li class="footer-li mb-2"> <a href="#" class="text-white">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row footer-1">
+        <div class="col-sm-4 list pl-4">
+          <ul class="list-inline mt-3">
+            <li class="list-inline-item"><a href="#" class="text-white">&copy; CRAYFISH LODGE 2016</a></li>
+            <li class="list-inline-item"> <a href="#" class="text-white">|</a> </li>
+            <li class="list-inline-item"> <a href="#" class="text-white">CONTACT</a></li>
+            <li class="list-inline-item"> <a href="#" class="text-white">|</a></li>
+            <li class="list-inline-item"> <a href="#" class="text-white">LEGAL TERMS</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-4 development">
+          <p class="text-white mt-3">DEVELOPED BY KISHAN CONSULTING</p>
+        </div>
+        <div class="col-sm-4 social">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="#" class="text-white">JOIN OUR COMMUNITY</a></li>
+            <li class="list-inline-item"><a href="#" class="fa fa-facebook"></a> </li>
+            <li class="list-inline-item"><a href="#" class="fa fa-twitter"></a></li>
+            <li class="list-inline-item"><a href="#" class="fa fa-google"></a></li>
+            <li class="list-inline-item"><a href="#" class="fa fa-linkedin"></a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
   </div>
-</div>
 </body>
 
 </html>
