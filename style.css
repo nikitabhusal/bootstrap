@@ -72,6 +72,9 @@ li a {
   font-family: "Quicksand", sans-serif;
   font-size: 16px;
 }
+.nav-link:hover {
+  color: #ffb10e;
+}
 .navbar-text {
   background-color: yellow;
   padding: 2px 10px;
