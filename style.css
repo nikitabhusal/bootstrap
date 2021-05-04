@@ -432,3 +432,28 @@ legend .text {
 .chk:hover {
   background-color: #1d5368;
 }
+
+.rooms h2 {
+  display: flex;
+  flex-direction: row;
+  color: #92692e;
+}
+.rooms h2:before,
+.rooms h2:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 2px solid #92692e;
+  margin: 20px 30px 20px 30px;
+}
+.gallary-heading h2 {
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+.gallary-heading h2:before,
+.gallary-heading h2:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 2px solid white;
+  margin: 20px 30px 20px 30px;
+}
